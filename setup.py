@@ -55,6 +55,8 @@ setup(
         "Plone>=6.0.0",
         "plone.api",
         "collective.person",
+        "collective.contact_behaviors",
+        "z3c.relationfield"
     ],
     extras_require={
         "test": [
