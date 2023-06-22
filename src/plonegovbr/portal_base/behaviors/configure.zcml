@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="plonegovbr.portal_base"
+    >
+
+  <include
+      package="plone.behavior"
+      file="meta.zcml"
+      />
+
+  <!-- Campi Behavior -->
+  <plone:behavior
+      name="plonegovbr.portal_base.campi"
+      title="PortalBrasil.edu: Campi Behavior"
+      description="Relation between a content and one or more Campus objects"
+      provides=".campi.ICampi"
+      />
+
+</configure>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+        meta_type="Dexterity FTI"
+        name="Person"
+        i18n:domain="plonegovbr.portal_base"
+>
+
+  <!-- Schema, class and security -->
+  <property name="model_source">&lt;model xmlns:i18n=&quot;http://xml.zope.org/namespaces/i18n&quot; xmlns:marshal=&quot;http://namespaces.plone.org/supermodel/marshal&quot; xmlns:form=&quot;http://namespaces.plone.org/supermodel/form&quot; xmlns:security=&quot;http://namespaces.plone.org/supermodel/security&quot; xmlns:indexer=&quot;http://namespaces.plone.org/supermodel/indexer&quot; xmlns:lingua=&quot;http://namespaces.plone.org/supermodel/lingua&quot; xmlns:users=&quot;http://namespaces.plone.org/supermodel/users&quot; xmlns=&quot;http://namespaces.plone.org/supermodel/schema&quot;&gt;
+    &lt;schema&gt;
+      &lt;fieldset name=&quot;layout&quot; label=&quot;Layout&quot;&gt;
+        &lt;field name=&quot;blocks&quot; type=&quot;plone.schema.jsonfield.JSONField&quot;&gt;
+          &lt;default&gt;{&#x27;2444e746-f496-4c3e-a3c7-f6eea28cad16&#x27;: {&#x27;@type&#x27;: &#x27;slate&#x27;, &#x27;plaintext&#x27;: &#x27;&#x27;, &#x27;styles&#x27;: {}, &#x27;value&#x27;: [{&#x27;children&#x27;: [{&#x27;text&#x27;: &#x27;&#x27;}], &#x27;type&#x27;: &#x27;p&#x27;}]}, &#x27;4ffbd230-2a04-44bb-89f4-6d9e0b71e0c5&#x27;: {&#x27;@type&#x27;: &#x27;title&#x27;, &#x27;fixed&#x27;: True, &#x27;required&#x27;: True, &#x27;readOnly&#x27;: True}, &#x27;aad6de27-6178-4b09-b19a-56ad8c5829e4&#x27;: {&#x27;@type&#x27;: &#x27;description&#x27;, &#x27;fixed&#x27;: True, &#x27;required&#x27;: True}}&lt;/default&gt;
+          &lt;description/&gt;
+          &lt;required&gt;False&lt;/required&gt;
+          &lt;title&gt;Blocks&lt;/title&gt;
+        &lt;/field&gt;
+        &lt;field name=&quot;blocks_layout&quot; type=&quot;plone.schema.jsonfield.JSONField&quot;&gt;
+          &lt;default&gt;{&#x27;items&#x27;: [&#x27;4ffbd230-2a04-44bb-89f4-6d9e0b71e0c5&#x27;, &#x27;aad6de27-6178-4b09-b19a-56ad8c5829e4&#x27;, &#x27;2444e746-f496-4c3e-a3c7-f6eea28cad16&#x27;]}&lt;/default&gt;
+          &lt;description/&gt;
+          &lt;required&gt;False&lt;/required&gt;
+          &lt;title&gt;Blocks Layout&lt;/title&gt;
+        &lt;/field&gt;
+      &lt;/fieldset&gt;
+    &lt;/schema&gt;
+  &lt;/model&gt;</property>
+
+  <!-- Enabled behaviors -->
+  <property name="behaviors"
+            purge="false"
+  >
+    <element value="plonegovbr.portal_base.person" />
+    <element value="collective.contact_behaviors.contact_info" />
+    <element value="volto.blocks.editable.layout" />
+    <element value="plone.namefromtitle" />
+    <element value="plone.shortname" />
+    <element value="plone.leadimage" />
+    <element value="plone.excludefromnavigation" />
+    <element value="plone.relateditems" />
+    <element value="plone.versioning" />
+  </property>
+
+  <!-- View information -->
+  <property name="add_view_expr">string:${folder_url}/++add++Person</property>
+  <property name="immediate_view">view</property>
+  <property name="default_view">view</property>
+  <property name="default_view_fallback">False</property>
+  <property name="view_methods">
+    <element value="view" />
+  </property>
+
+</object>

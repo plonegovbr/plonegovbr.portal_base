@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rolemap>
+  <permissions>
+
+
+    <!-- Campus -->
+    <permission acquire="False"
+                name="plonegovbr.portal_base: Add Campus"
+    >
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+      <role name="Editor" />
+      <role name="Contributor" />
+    </permission>
+
+    <!-- collective.contact_behaviors -->
+    <permission acquire="False"
+                name="collective.contact_behaviors: View Basic Address Information"
+    >
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+      <role name="Editor" />
+      <role name="Contributor" />
+      <role name="Reader" />
+      <role name="Anonymous" />
+    </permission>
+
+    <permission acquire="False"
+                name="collective.contact_behaviors: View Detailed Address Information"
+    >
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+      <role name="Editor" />
+      <role name="Contributor" />
+      <role name="Reader" />
+      <role name="Anonymous" />
+    </permission>
+
+    <permission acquire="False"
+                name="collective.contact_behaviors: View Contact Information"
+    >
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+      <role name="Editor" />
+      <role name="Contributor" />
+      <role name="Reader" />
+      <role name="Anonymous" />
+    </permission>
+  </permissions>
+
+</rolemap>

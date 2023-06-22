@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+  <difftypes>
+    <type portal_type="Campus">
+      <field difftype="Compound Diff for Dexterity types"
+             name="any"
+      />
+    </type>
+  </difftypes>
+</object>

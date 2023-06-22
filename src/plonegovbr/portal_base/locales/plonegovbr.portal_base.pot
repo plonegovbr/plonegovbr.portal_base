@@ -1,0 +1,86 @@
+#--- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+#SOME DESCRIPTIVE TITLE.
+#FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-06-22 23:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plonegovbr.portal_base\n"
+
+#: plonegovbr/portal_base/profiles/default/types/Campus.xml
+msgid "A campus in the University."
+msgstr ""
+
+#: plonegovbr/portal_base/profiles/default/types/Campus.xml
+msgid "Campus"
+msgstr ""
+
+#: plonegovbr/portal_base/profiles.zcml:21
+msgid "Desinstala o Portal Brasil"
+msgstr ""
+
+#: plonegovbr/portal_base/profiles/default/types/Campus.xml
+msgid "Edit"
+msgstr ""
+
+#: plonegovbr/portal_base/profiles.zcml:13
+msgid "Instalação do Portal Brasil"
+msgstr ""
+
+#: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "PortalBrasil.edu"
+msgstr ""
+
+#: plonegovbr/portal_base/behaviors/configure.zcml:20
+msgid "PortalBrasil.edu: Campi Behavior"
+msgstr ""
+
+#: plonegovbr/portal_base/profiles.zcml:21
+msgid "PortalBrasil: Desinstalação"
+msgstr ""
+
+#: plonegovbr/portal_base/profiles.zcml:13
+msgid "PortalBrasil: Instalação"
+msgstr ""
+
+#: plonegovbr/portal_base/profiles.zcml:29
+msgid "PortalBrasil: Testes"
+msgstr ""
+
+#: plonegovbr/portal_base/behaviors/configure.zcml:20
+msgid "Relation between a content and one or more Campus objects"
+msgstr ""
+
+#: plonegovbr/portal_base/profiles.zcml:29
+msgid "Utilizado em testes automatizados"
+msgstr ""
+
+#: plonegovbr/portal_base/profiles/default/types/Campus.xml
+msgid "View"
+msgstr ""
+
+#. Default: "Filter by Campus."
+#: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "description_qs_campi"
+msgstr ""
+
+#. Default: "Please select Campi related to this content."
+#: plonegovbr/portal_base/behaviors/campi.py:17
+msgid "help_campi"
+msgstr ""
+
+#. Default: "Campi"
+#: plonegovbr/portal_base/behaviors/campi.py:16
+#: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "label_campi"
+msgstr ""

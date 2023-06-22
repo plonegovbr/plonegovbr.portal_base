@@ -1,0 +1,10 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <!-- Campus Vocabularies -->
+  <utility
+      name="plonegovbr.portal_base.vocab.campi"
+      component=".campus.campi_vocabulary"
+      />
+
+
+</configure>

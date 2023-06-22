@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="collective.person"
+>
+
+  <records interface="collective.person.controlpanel.interfaces.IPersonSettings"
+           prefix="person"
+  >
+    <value key="roles"
+           purge="false"
+    >{
+            "items": [
+                {
+                    "token": "member",
+                    "titles": {
+                        "pt-br": "Colaborador",
+                    },
+                },
+            ]
+        }</value>
+
+  </records>
+
+</registry>

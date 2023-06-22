@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="portal_catalog">
+
+  <!-- Campi -->
+  <index meta_type="KeywordIndex"
+         name="campi"
+  >
+    <indexed_attr value="campi" />
+  </index>
+
+  <column value="campi" />
+
+</object>
