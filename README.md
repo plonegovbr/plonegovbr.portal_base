@@ -1,4 +1,4 @@
-<div align="center"><img alt="logo" src="https://raw.githubusercontent.com/plonegovbr/plonegovbr.portal_base/main/docs/logo.svg" width="100" /></div>
+<div align="center"><img alt="logo" src="https://raw.githubusercontent.com/plonegovbr/plonegovbr.portal_base/main/docs/logo.png" width="100" /></div>
 
 <h1 align="center">Portal Brasil: Configurações Base</h1>
 
