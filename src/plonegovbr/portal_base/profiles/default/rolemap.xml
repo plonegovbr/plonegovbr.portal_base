@@ -2,10 +2,20 @@
 <rolemap>
   <permissions>
 
-
     <!-- Campus -->
     <permission acquire="False"
                 name="plonegovbr.portal_base: Add Campus"
+    >
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+      <role name="Editor" />
+      <role name="Contributor" />
+    </permission>
+
+    <!-- Curso -->
+    <permission acquire="False"
+                name="plonegovbr.portal_base: Add Curso"
     >
       <role name="Manager" />
       <role name="Site Administrator" />

@@ -7,4 +7,26 @@
       />
 
 
+  <!-- Areas Vocabularies -->
+  <utility
+      name="plonegovbr.portal_base.vocab.available_areas"
+      component=".curso.available_areas_vocabulary"
+      />
+  <utility
+      name="plonegovbr.portal_base.vocab.areas"
+      component=".curso.areas_vocabulary"
+      />
+
+
+  <!-- Modalidades Vocabularies -->
+  <utility
+      name="plonegovbr.portal_base.vocab.available_modalidades"
+      component=".curso.available_modalidades_vocabulary"
+      />
+  <utility
+      name="plonegovbr.portal_base.vocab.modalidades"
+      component=".curso.modalidades_vocabulary"
+      />
+
+
 </configure>

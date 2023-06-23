@@ -3,10 +3,10 @@
 # See the inline comments on how to expand/tweak this configuration file
 [meta]
 template = "default"
-commit-id = "23d5b8e1"
+commit-id = "7983e3d9"
 
 [pyproject]
-codespell_skip = "*.min.js,*.pot,*.po,*.yaml,*.json"
+codespell_skip = "*"
 codespell_ignores = "vew"
 dependencies_ignores = "['plone.volto', 'zestreleaser.towncrier', 'zest.releaser', 'pytest', 'pytest-cov', 'pytest-plone']"
 dependencies_mappings = [

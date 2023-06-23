@@ -6,5 +6,10 @@
              name="any"
       />
     </type>
+    <type portal_type="Curso">
+      <field difftype="Compound Diff for Dexterity types"
+             name="any"
+      />
+    </type>
   </difftypes>
 </object>

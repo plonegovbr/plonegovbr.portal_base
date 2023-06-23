@@ -12,6 +12,12 @@
         title="plonegovbr.portal_base: Add Campus"
         />
 
+    <!-- Curso -->
+    <permission
+        id="plonegovbr.portal_base.curso.add"
+        title="plonegovbr.portal_base: Add Curso"
+        />
+
   </configure>
 
 </configure>

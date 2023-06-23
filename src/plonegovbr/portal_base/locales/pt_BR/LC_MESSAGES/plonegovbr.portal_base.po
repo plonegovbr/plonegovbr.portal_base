@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-06-22 23:23+0000\n"
+"POT-Creation-Date: 2023-06-23 13:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,16 @@ msgstr "Um campus na instituição de ensino"
 msgid "Campus"
 msgstr "Campus"
 
+#: plonegovbr/portal_base/profiles/default/types/Curso.xml
+msgid "Curso"
+msgstr "Curso"
+
 #: plonegovbr/portal_base/profiles.zcml:21
 msgid "Desinstala o Portal Brasil"
 msgstr "Desinstala o Portal Brasil"
 
 #: plonegovbr/portal_base/profiles/default/types/Campus.xml
+#: plonegovbr/portal_base/profiles/default/types/Curso.xml
 msgid "Edit"
 msgstr "Edição"
 
@@ -36,7 +41,7 @@ msgstr "Instalação do Portal Brasil"
 
 #: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "PortalBrasil.edu"
-msgstr ""
+msgstr "PortalBrasil.edu"
 
 #: plonegovbr/portal_base/behaviors/configure.zcml:20
 msgid "PortalBrasil.edu: Campi Behavior"
@@ -58,26 +63,73 @@ msgstr "PortalBrasil: Testes"
 msgid "Relation between a content and one or more Campus objects"
 msgstr "Cria relação entre um conteúdo e um ou mais objetos do tipo Campus"
 
+#: plonegovbr/portal_base/profiles/default/types/Curso.xml
+msgid "Um Curso oferecido pela instituição"
+msgstr "Um Curso oferecido pela instituição"
+
 #: plonegovbr/portal_base/profiles.zcml:29
 msgid "Utilizado em testes automatizados"
 msgstr "Utilizado em testes automatizados"
 
 #: plonegovbr/portal_base/profiles/default/types/Campus.xml
+#: plonegovbr/portal_base/profiles/default/types/Curso.xml
 msgid "View"
 msgstr "Visão"
+
+#. Default: "Filter by Área."
+#: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "description_qs_areas"
+msgstr "Filtrar por área"
 
 #. Default: "Filter by Campus."
 #: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "description_qs_campi"
-msgstr ""
+msgstr "Filtrar por campus"
+
+#. Default: "Filter by Modalidade."
+#: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "description_qs_modalidades"
+msgstr "Filtrar por modalidade"
+
+#. Default: "Vocabulário de áreas"
+#: plonegovbr/portal_base/controlpanel/interfaces.py:38
+msgid "help_areas"
+msgstr "Vocabulário de áreas"
 
 #. Default: "Please select Campi related to this content."
 #: plonegovbr/portal_base/behaviors/campi.py:17
 msgid "help_campi"
 msgstr "Por favor, selecione o campus (ou campi) relacionados a este conteúdo"
 
+#. Default: "Vocabulário de modalidades"
+#: plonegovbr/portal_base/controlpanel/interfaces.py:72
+msgid "help_modalidades"
+msgstr "Vocabulário de modalidades"
+
+#. Default: "Áreas"
+#: plonegovbr/portal_base/controlpanel/interfaces.py:37
+#: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "label_areas"
+msgstr "Áreas"
+
 #. Default: "Campi"
 #: plonegovbr/portal_base/behaviors/campi.py:16
 #: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "label_campi"
 msgstr "Campi"
+
+#. Default: "Área"
+#: plonegovbr/portal_base/content/curso.py:13
+msgid "label_curso_area"
+msgstr "Área"
+
+#. Default: "Modalidade"
+#: plonegovbr/portal_base/content/curso.py:21
+msgid "label_curso_modalidade"
+msgstr "Modalidade"
+
+#. Default: "Modalidades"
+#: plonegovbr/portal_base/controlpanel/interfaces.py:71
+#: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "label_modalidades"
+msgstr "Modalidades"
