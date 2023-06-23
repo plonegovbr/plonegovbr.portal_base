@@ -1,9 +1,9 @@
-from plonegovbr.portal_base import _
-from plonegovbr.portal_base.controlpanel.interfaces import IEduSettings
-from plonegovbr.portal_base.interfaces import IBrasilLayer
 from plone.app.registry.browser.controlpanel import ControlPanelFormWrapper
 from plone.app.registry.browser.controlpanel import RegistryEditForm
 from plone.restapi.controlpanels import RegistryConfigletPanel
+from plonegovbr.portal_base import _
+from plonegovbr.portal_base.controlpanel.interfaces import IEduSettings
+from plonegovbr.portal_base.interfaces import IBrasilLayer
 from zope.component import adapter
 from zope.interface import Interface
 

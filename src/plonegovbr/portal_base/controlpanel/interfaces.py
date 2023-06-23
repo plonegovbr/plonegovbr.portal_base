@@ -1,7 +1,7 @@
 """Control Panels Interfaces."""
-from plonegovbr.portal_base import _
 from plone.autoform import directives
 from plone.schema import JSONField
+from plonegovbr.portal_base import _
 from zope.interface import Interface
 
 import json

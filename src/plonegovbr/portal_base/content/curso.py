@@ -1,7 +1,7 @@
 """Um Curso oferecido pela instituição."""
-from plonegovbr.portal_base import _
 from plone.dexterity.content import Container
 from plone.supermodel.model import Schema
+from plonegovbr.portal_base import _
 from zope import schema
 from zope.interface import implementer
 

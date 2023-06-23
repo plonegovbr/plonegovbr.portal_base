@@ -18,11 +18,7 @@ class TestVocabAvailableModalidades:
 
     @pytest.mark.parametrize(
         "token",
-        [
-            "tecnico",
-            "mestrado",
-            "doutorado"
-        ],
+        ["tecnico", "mestrado", "doutorado"],
     )
     def test_token(self, token):
         assert token in [x for x in self.vocab.by_token]
@@ -57,10 +53,7 @@ class TestVocabModalidades:
 
     @pytest.mark.parametrize(
         "token",
-        [
-            "tecnico",
-            "mestrado"
-        ],
+        ["tecnico", "mestrado"],
     )
     def test_token(self, token):
         assert token in [x for x in self.vocab.by_token]

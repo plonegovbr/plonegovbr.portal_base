@@ -18,11 +18,7 @@ class TestVocabAvailableAreas:
 
     @pytest.mark.parametrize(
         "token",
-        [
-            "sociais",
-            "engenharia",
-            "tecnologia"
-        ],
+        ["sociais", "engenharia", "tecnologia"],
     )
     def test_token(self, token):
         assert token in [x for x in self.vocab.by_token]
