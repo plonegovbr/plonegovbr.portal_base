@@ -16,6 +16,7 @@ check_manifest_ignores = """
     "news/*",
     "requirements-mxdev.txt",
 """
+towncrier_issue_format = "[#{issue}](https://github.com/plonegovbr/plonegovbr.portal/issues/{issue})"
 
 [gitignore]
 extra_lines = """
