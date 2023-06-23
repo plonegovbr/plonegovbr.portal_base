@@ -2,5 +2,5 @@
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 
-class IPersonLayer(IDefaultBrowserLayer):
+class IBrasilLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""

@@ -5,6 +5,26 @@
 
   <!-- PortalBrasil.edu filters -->
   <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.areas"
+  >
+    <value key="title"
+           i18n:translate="label_areas"
+    >Áreas</value>
+    <value key="description"
+           i18n:translate="description_qs_areas"
+    >Filter by Área.</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="group"
+           i18n:translate=""
+    >PortalBrasil.edu</value>
+    <value key="operations">
+      <element>plone.app.querystring.operation.selection.any</element>
+    </value>
+    <value key="vocabulary">plonegovbr.portal_base.vocab.areas</value>
+  </records>
+
+  <records interface="plone.app.querystring.interfaces.IQueryField"
            prefix="plone.app.querystring.field.campi"
   >
     <value key="title"
@@ -22,6 +42,26 @@
       <element>plone.app.querystring.operation.selection.any</element>
     </value>
     <value key="vocabulary">plonegovbr.portal_base.vocab.campi</value>
+  </records>
+
+  <records interface="plone.app.querystring.interfaces.IQueryField"
+           prefix="plone.app.querystring.field.modalidades"
+  >
+    <value key="title"
+           i18n:translate="label_modalidades"
+    >Modalidades</value>
+    <value key="description"
+           i18n:translate="description_qs_modalidades"
+    >Filter by Modalidade.</value>
+    <value key="enabled">True</value>
+    <value key="sortable">False</value>
+    <value key="group"
+           i18n:translate=""
+    >PortalBrasil.edu</value>
+    <value key="operations">
+      <element>plone.app.querystring.operation.selection.any</element>
+    </value>
+    <value key="vocabulary">plonegovbr.portal_base.vocab.modalidades</value>
   </records>
 
 </registry>

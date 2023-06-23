@@ -6,7 +6,17 @@
     i18n_domain="plonegovbr.portal_base"
     >
 
-  <!-- Control panel -->
-
+  <!-- PortalBrasil.edu -->
+  <browser:page
+      name="pb-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".edu_cp.SettingsControlPanelFormWrapper"
+      permission="cmf.ManagePortal"
+      layer="plonegovbr.portal_base.interfaces.IBrasilLayer"
+      />
+  <adapter
+      factory=".edu_cp.SettingsConfigletPanel"
+      name="pb_edu"
+      />
 
 </configure>

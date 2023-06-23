@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layers>
-  <layer interface="plonegovbr.portal_base.interfaces.IPersonLayer"
+  <layer interface="plonegovbr.portal_base.interfaces.IBrasilLayer"
          name="plonegovbr.portal_base"
   />
 </layers>

@@ -10,4 +10,22 @@
 
   <column value="campi" />
 
+  <!-- Areas -->
+  <index meta_type="KeywordIndex"
+         name="areas"
+  >
+    <indexed_attr value="areas" />
+  </index>
+
+  <column value="areas" />
+
+  <!-- Modalidades -->
+  <index meta_type="KeywordIndex"
+         name="modalidades"
+  >
+    <indexed_attr value="modalidades" />
+  </index>
+
+  <column value="modalidades" />
+
 </object>

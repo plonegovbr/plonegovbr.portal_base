@@ -88,3 +88,49 @@ def campus(campi) -> dict:
     content_uid = [key for key in campi.keys()][0]
     brains = api.content.find(UID=content_uid)
     return brains[0].getObject()
+
+
+@pytest.fixture
+def cursos_payload() -> list:
+    """Payload to create two curso items."""
+    return [
+        {
+            "type": "Curso",
+            "id": "pgp-curitiba",
+            "title": "PGP- Curitiba",
+            "description": "Pós-Graduação em Planejamento e Governança Pública",
+            "modalidades": ["mestrado"],
+            "areas": ["sociais"],
+        },
+        {
+            "type": "Curso",
+            "id": "tecnico-integrado-em-informatica",
+            "title": "Curso Técnico Integrado em Informática",
+            "description": "A informática está inserida em todos os segmentos...",
+            "modalidades": ["tecnico"],
+            "areas": ["tecnologia"],
+        },
+    ]
+
+
+@pytest.fixture
+def cursos(portal, cursos_payload) -> dict:
+    """Create Curso content items."""
+    response = {}
+    with api.env.adopt_roles(
+        [
+            "Manager",
+        ]
+    ):
+        for data in cursos_payload:
+            content = api.content.create(container=portal, **data)
+            response[content.UID()] = content.title
+    return response
+
+
+@pytest.fixture
+def curso(cursos) -> dict:
+    """Return one Curso."""
+    content_uid = [key for key in cursos.keys()][0]
+    brains = api.content.find(UID=content_uid)
+    return brains[0].getObject()
