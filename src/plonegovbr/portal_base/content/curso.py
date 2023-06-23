@@ -18,7 +18,7 @@ class ICurso(Schema):
     )
 
     modalidades = schema.List(
-        title=_("label_curso_area", default="Área"),
+        title=_("label_curso_modalidade", default="Modalidade"),
         value_type=schema.Choice(
             vocabulary="plonegovbr.portal_base.vocab.available_modalidades",
         ),
