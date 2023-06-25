@@ -75,7 +75,8 @@ clean-test: ## remove test and coverage artifacts
 bin/pip bin/tox bin/mxdev:
 	@echo "$(GREEN)==> Setup Virtual Env$(RESET)"
 	$(PYTHON) -m venv .
-	bin/pip install -U "pip" "wheel" "cookiecutter" "mxdev" "tox"
+	bin/pip install -U "pip" "wheel" "cookiecutter" "mxdev" "tox" "pre-commit"
+	if [ -d $(GIT_FOLDER) ]; then bin/pre-commit install; else echo "$(RED) Not installing pre-commit$(RESET)";fi
 
 .PHONY: config
 config: bin/pip  ## Create instance configuration
