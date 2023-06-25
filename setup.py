@@ -45,7 +45,6 @@ setup(
     },
     license="GPL version 2",
     packages=find_packages("src", exclude=["ez_setup"]),
-    namespace_packages=["plonegovbr"],
     package_dir={"": "src"},
     include_package_data=True,
     zip_safe=True,

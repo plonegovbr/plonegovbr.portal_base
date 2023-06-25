@@ -16,6 +16,7 @@ RESET=`tput sgr0`
 YELLOW=`tput setaf 3`
 
 BACKEND_FOLDER=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
+GIT_FOLDER=$(BACKEND_FOLDER)/.git
 DOCS_DIR=${BACKEND_FOLDER}/docs
 
 # Python checks
@@ -75,7 +76,8 @@ clean-test: ## remove test and coverage artifacts
 bin/pip bin/tox bin/mxdev:
 	@echo "$(GREEN)==> Setup Virtual Env$(RESET)"
 	$(PYTHON) -m venv .
-	bin/pip install -U "pip" "wheel" "cookiecutter" "mxdev" "tox"
+	bin/pip install -U "pip" "wheel" "cookiecutter" "mxdev" "tox" "pre-commit"
+	if [ -d $(GIT_FOLDER) ]; then bin/pre-commit install; else echo "$(RED) Not installing pre-commit$(RESET)";fi
 
 .PHONY: config
 config: bin/pip  ## Create instance configuration
@@ -83,7 +85,7 @@ config: bin/pip  ## Create instance configuration
 	bin/cookiecutter -f --no-input --config-file instance.yaml gh:plone/cookiecutter-zope-instance
 
 .PHONY: install-plone-6.0
-install-plone-6.0: config ## pip install Plone packages
+install-plone-6.0: bin/mxdev config ## pip install Plone packages
 	@echo "$(GREEN)==> Setup Build$(RESET)"
 	bin/mxdev -c mx.ini
 	bin/pip install -r requirements-mxdev.txt
