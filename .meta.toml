@@ -26,3 +26,12 @@ requirements-mxdev.txt
 [tox]
 test_runner = "pytest"
 test_path = "/tests"
+
+[github]
+jobs = [
+    "qa",
+    "test",
+    "coverage",
+    "release-ready",
+    "circular",
+    ]
