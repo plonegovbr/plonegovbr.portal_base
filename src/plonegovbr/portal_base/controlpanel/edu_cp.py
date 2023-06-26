@@ -28,7 +28,7 @@ class SettingsConfigletPanel(RegistryConfigletPanel):
 
     schema = IEduSettings
     configlet_id = "pb_edu"
-    configlet_category_id = "PortalBrasil"
+    configlet_category_id = "Products"
     title = _(LABEL)
-    group = "PortalBrasil"
+    group = "Products"
     schema_prefix = SCHEMA_PREFIX
