@@ -14,5 +14,6 @@
   <include package=".controlpanel" />
   <include package=".indexers" />
   <include package=".vocabularies" />
+  <include package=".validators" />
 
 </configure>
