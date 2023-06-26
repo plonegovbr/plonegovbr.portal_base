@@ -52,6 +52,7 @@ setup(
     install_requires=[
         "setuptools",
         "Plone>=6.0.0",
+        "plone.restapi>=8.40.0",
         "plone.api",
         "collective.person",
         "collective.contact_behaviors",
