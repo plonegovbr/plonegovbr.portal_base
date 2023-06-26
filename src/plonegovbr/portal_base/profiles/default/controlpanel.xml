@@ -4,7 +4,7 @@
   <!-- PortalBrasil.edu -->
   <configlet action_id="pb_edu"
              appId="pb_edu-controlpanel"
-             category="PortalBrasil"
+             category="Products"
              condition_expr=""
              icon_expr=""
              title="PortalBrasil.edu: Configurações"
