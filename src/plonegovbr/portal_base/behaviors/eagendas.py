@@ -7,14 +7,20 @@ from plonegovbr.portal_base.validators.url import UrlValidator
 from zope.interface import provider
 
 
+def is_url(value):
+    if value:
+        UrlValidator(value)
+    return True
+
+
 @provider(IFormFieldProvider)
 class IEAgendas(model.Schema):
     """E-Agendas Behavior."""
 
     fieldset(
-        'eagendas',
-        label=_('label_schema_eagendas', default='E-Agendas'),
-        fields=['url_agenda'],
+        "eagendas",
+        label=_("label_schema_eagendas", default="E-Agendas"),
+        fields=["url_agenda"],
     )
 
     # url agenda
@@ -24,6 +30,7 @@ class IEAgendas(model.Schema):
             "help_url_agenda", default="Please enter the URL of the e-Agendas"
         ),
         required=False,
-        missing_value='',
-        constraint=UrlValidator
+        missing_value="",
+        default="",
+        constraint=is_url,
     )

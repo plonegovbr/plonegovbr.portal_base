@@ -13,7 +13,6 @@ short_description = (
     "Base de código compartilhada pelas várias distribuições do Portal Brasil"
 )
 
-
 setup(
     name="plonegovbr.portal_base",
     version="1.0.0a1.dev0",
@@ -66,6 +65,7 @@ setup(
             "pytest",
             "pytest-cov",
             "pytest-plone>=0.2.0",
+            "validators",
         ],
     },
     entry_points="""
