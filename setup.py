@@ -1,6 +1,6 @@
 """Installer for the plonegovbr.portal_base package."""
 from pathlib import Path
-from setuptools import find_packages
+from setuptools import find_namespace_packages
 from setuptools import setup
 
 
@@ -44,7 +44,7 @@ setup(
         "Tracker": "https://github.com/plonegovbr/plonegovbr.portal/issues",
     },
     license="GPL version 2",
-    packages=find_packages("src", exclude=["ez_setup"]),
+    packages=find_namespace_packages("src", include=["plonegovbr.*"]),
     package_dir={"": "src"},
     include_package_data=True,
     zip_safe=True,
