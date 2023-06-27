@@ -1,4 +1,6 @@
 from plone.app.vocabularies.catalog import StaticCatalogVocabulary
+from plone.app.z3cform.widget import RelatedItemsFieldWidget
+from plone.autoform import directives
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.supermodel import model
 from plonegovbr.portal_base import _
@@ -22,4 +24,11 @@ class ICampi(model.Schema):
         ),
         required=False,
         default=[],
+    )
+    directives.widget(
+        "campi",
+        RelatedItemsFieldWidget,
+        pattern_options={
+            "selectableTypes": ["Campus"],
+        },
     )
