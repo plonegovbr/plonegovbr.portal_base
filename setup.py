@@ -54,6 +54,7 @@ setup(
         "plone.api",
         "collective.person",
         "collective.contact_behaviors",
+        "validators",
         "z3c.relationfield",
     ],
     extras_require={
@@ -65,7 +66,6 @@ setup(
             "pytest",
             "pytest-cov",
             "pytest-plone>=0.2.0",
-            "validators",
         ],
     },
     entry_points="""
