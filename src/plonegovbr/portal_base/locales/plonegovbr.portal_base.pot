@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-06-27 00:16+0000\n"
+"POT-Creation-Date: 2023-06-27 17:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,7 @@ msgid "description_qs_modalidades"
 msgstr ""
 
 #. Default: "Vocabulário de áreas"
-#: plonegovbr/portal_base/controlpanel/interfaces.py:38
+#: plonegovbr/portal_base/controlpanel/interfaces/edu_cp.py:38
 msgid "help_areas"
 msgstr ""
 
@@ -113,17 +113,23 @@ msgid "help_campi"
 msgstr ""
 
 #. Default: "Vocabulário de modalidades"
-#: plonegovbr/portal_base/controlpanel/interfaces.py:72
+#: plonegovbr/portal_base/controlpanel/interfaces/edu_cp.py:72
 msgid "help_modalidades"
 msgstr ""
 
+#. Default: "Please enter the code of the SIORG"
+#: plonegovbr/portal_base/controlpanel/interfaces/pb_cp.py:11
+msgid "help_siorg"
+msgstr ""
+
 #. Default: "Please enter the URL of the e-Agendas"
-#: plonegovbr/portal_base/behaviors/eagendas.py:23
+#: plonegovbr/portal_base/behaviors/eagendas.py:29
+#: plonegovbr/portal_base/controlpanel/interfaces/pb_cp.py:28
 msgid "help_url_agenda"
 msgstr ""
 
 #. Default: "Áreas"
-#: plonegovbr/portal_base/controlpanel/interfaces.py:37
+#: plonegovbr/portal_base/controlpanel/interfaces/edu_cp.py:37
 #: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "label_areas"
 msgstr ""
@@ -144,18 +150,29 @@ msgstr ""
 msgid "label_curso_modalidade"
 msgstr ""
 
+#. Default: "E-Agendas"
+#: plonegovbr/portal_base/controlpanel/interfaces/pb_cp.py:21
+msgid "label_fieldset_eagendas"
+msgstr ""
+
 #. Default: "Modalidades"
-#: plonegovbr/portal_base/controlpanel/interfaces.py:71
+#: plonegovbr/portal_base/controlpanel/interfaces/edu_cp.py:71
 #: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "label_modalidades"
 msgstr ""
 
 #. Default: "E-Agendas"
-#: plonegovbr/portal_base/behaviors/eagendas.py:16
+#: plonegovbr/portal_base/behaviors/eagendas.py:22
 msgid "label_schema_eagendas"
 msgstr ""
 
+#. Default: "SIORG"
+#: plonegovbr/portal_base/controlpanel/interfaces/pb_cp.py:10
+msgid "label_siorg"
+msgstr ""
+
 #. Default: "URL"
-#: plonegovbr/portal_base/behaviors/eagendas.py:22
+#: plonegovbr/portal_base/behaviors/eagendas.py:28
+#: plonegovbr/portal_base/controlpanel/interfaces/pb_cp.py:27
 msgid "label_url_agenda"
 msgstr ""

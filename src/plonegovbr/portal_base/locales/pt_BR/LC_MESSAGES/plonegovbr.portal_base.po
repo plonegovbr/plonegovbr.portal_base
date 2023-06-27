@@ -1,10 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-06-27 00:16+0000\n"
-"PO-Revision-Date: 2023-06-26 20:51-0300\n"
+"POT-Creation-Date: 2023-06-27 17:44+0000\n"
+"PO-Revision-Date: 2023-06-27 14:46-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,7 +14,6 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
-"Language: pt_BR\n"
 "X-Generator: Poedit 3.3.2\n"
 
 #: plonegovbr/portal_base/profiles/default/types/Campus.xml
@@ -102,7 +102,7 @@ msgid "description_qs_modalidades"
 msgstr "Filtrar por modalidade"
 
 #. Default: "Vocabulário de áreas"
-#: plonegovbr/portal_base/controlpanel/interfaces.py:38
+#: plonegovbr/portal_base/controlpanel/interfaces/edu_cp.py:38
 msgid "help_areas"
 msgstr "Vocabulário de áreas"
 
@@ -112,17 +112,23 @@ msgid "help_campi"
 msgstr "Por favor, selecione o campus (ou campi) relacionados a este conteúdo"
 
 #. Default: "Vocabulário de modalidades"
-#: plonegovbr/portal_base/controlpanel/interfaces.py:72
+#: plonegovbr/portal_base/controlpanel/interfaces/edu_cp.py:72
 msgid "help_modalidades"
 msgstr "Vocabulário de modalidades"
 
+#. Default: "Please enter the code of the SIORG"
+#: plonegovbr/portal_base/controlpanel/interfaces/pb_cp.py:11
+msgid "help_siorg"
+msgstr "Por favor, insira o código do SIORG."
+
 #. Default: "Please enter the URL of the e-Agendas"
-#: plonegovbr/portal_base/behaviors/eagendas.py:23
+#: plonegovbr/portal_base/behaviors/eagendas.py:29
+#: plonegovbr/portal_base/controlpanel/interfaces/pb_cp.py:28
 msgid "help_url_agenda"
 msgstr "Por favor, insira o URL da agenda."
 
 #. Default: "Áreas"
-#: plonegovbr/portal_base/controlpanel/interfaces.py:37
+#: plonegovbr/portal_base/controlpanel/interfaces/edu_cp.py:37
 #: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "label_areas"
 msgstr "Áreas"
@@ -143,18 +149,29 @@ msgstr "Área"
 msgid "label_curso_modalidade"
 msgstr "Modalidade"
 
+#. Default: "E-Agendas"
+#: plonegovbr/portal_base/controlpanel/interfaces/pb_cp.py:21
+msgid "label_fieldset_eagendas"
+msgstr "E-Agendas"
+
 #. Default: "Modalidades"
-#: plonegovbr/portal_base/controlpanel/interfaces.py:71
+#: plonegovbr/portal_base/controlpanel/interfaces/edu_cp.py:71
 #: plonegovbr/portal_base/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "label_modalidades"
 msgstr "Modalidades"
 
 #. Default: "E-Agendas"
-#: plonegovbr/portal_base/behaviors/eagendas.py:16
+#: plonegovbr/portal_base/behaviors/eagendas.py:22
 msgid "label_schema_eagendas"
 msgstr "E-Agendas"
 
+#. Default: "SIORG"
+#: plonegovbr/portal_base/controlpanel/interfaces/pb_cp.py:10
+msgid "label_siorg"
+msgstr "SIORG"
+
 #. Default: "URL"
-#: plonegovbr/portal_base/behaviors/eagendas.py:22
+#: plonegovbr/portal_base/behaviors/eagendas.py:28
+#: plonegovbr/portal_base/controlpanel/interfaces/pb_cp.py:27
 msgid "label_url_agenda"
 msgstr "URL da agenda"
