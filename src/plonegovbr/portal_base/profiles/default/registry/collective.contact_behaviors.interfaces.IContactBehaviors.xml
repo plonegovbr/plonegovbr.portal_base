@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="collective.contact_behaviors"
+>
+
+  <records interface="collective.contact_behaviors.interfaces.IContactBehaviors"
+           prefix="contact"
+  >
+    <value key="default_state" />
+    <value key="default_country">BR</value>
+
+  </records>
+</registry>
