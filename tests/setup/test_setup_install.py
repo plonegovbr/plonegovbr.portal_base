@@ -23,7 +23,13 @@ class TestSetupInstall:
             ["contact.default_country", "BR"],
         ],
     )
-    def test_registry_keys(self, installer, key, expected):
+    def test_registry_keys(self, portal, key, expected):
         """Test if registry keys are set."""
         value = api.portal.get_registry_record(key, default=None)
         assert value == expected
+
+    def test_home_action_not_visible(self, portal):
+        """Test if home action is not visible in portal_tabs."""
+        tool = api.portal.get_tool("portal_actions")
+        action = tool["portal_tabs"]["index_html"]
+        assert action.visible is False
