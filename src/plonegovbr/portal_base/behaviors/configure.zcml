@@ -19,4 +19,12 @@
       provides=".campi.ICampi"
       />
 
+  <!-- E-Agendas Behavior -->
+  <plone:behavior
+      name="plonegovbr.portal_base.eagendas"
+      title="PortalBrasil: E-Agendas Behavior"
+      description=""
+      provides=".eagendas.IEAgendas"
+      />
+
 </configure>

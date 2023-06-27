@@ -13,7 +13,6 @@ short_description = (
     "Base de código compartilhada pelas várias distribuições do Portal Brasil"
 )
 
-
 setup(
     name="plonegovbr.portal_base",
     version="1.0.0a1.dev0",
@@ -56,6 +55,7 @@ setup(
         "plone.api",
         "collective.person",
         "collective.contact_behaviors",
+        "validators",
         "z3c.relationfield",
     ],
     extras_require={

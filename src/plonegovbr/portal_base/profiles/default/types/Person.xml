@@ -29,7 +29,7 @@
   <property name="behaviors"
             purge="false"
   >
-    <element value="plonegovbr.portal_base.person" />
+    <element value="collective.person.person" />
     <element value="collective.contact_behaviors.contact_info" />
     <element value="volto.blocks.editable.layout" />
     <element value="plone.namefromtitle" />

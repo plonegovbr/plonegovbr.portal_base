@@ -14,4 +14,17 @@
     <permission>Manage portal</permission>
   </configlet>
 
+  <!-- PortalBrasil.edu -->
+  <configlet action_id="pb"
+             appId="pb-controlpanel"
+             category="Products"
+             condition_expr=""
+             icon_expr=""
+             title="PortalBrasil: Configurações"
+             url_expr="string:${portal_url}/@@pb-controlpanel"
+             visible="True"
+  >
+    <permission>Manage portal</permission>
+  </configlet>
+
 </object>
