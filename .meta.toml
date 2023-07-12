@@ -3,7 +3,7 @@
 # See the inline comments on how to expand/tweak this configuration file
 [meta]
 template = "default"
-commit-id = "7983e3d9"
+commit-id = "6f863ec6"
 
 [pyproject]
 codespell_skip = "*"
@@ -14,24 +14,27 @@ dependencies_mappings = [
     ]
 check_manifest_ignores = """
     "news/*",
+    "constraints-mxdev.txt",
     "requirements-mxdev.txt",
 """
 towncrier_issue_format = "[#{issue}](https://github.com/plonegovbr/plonegovbr.portal/issues/{issue})"
 
 [gitignore]
 extra_lines = """
+constraints-mxdev.txt
 requirements-mxdev.txt
 """
 
 [tox]
 test_runner = "pytest"
 test_path = "/tests"
+use_mxdev = true
 
 [github]
 jobs = [
     "qa",
     "test",
     "coverage",
-    "release-ready",
+    "release_ready",
     "circular",
     ]
